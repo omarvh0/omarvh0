@@ -37,6 +37,8 @@ function filewalker(dir, done) {
     });
 };
 
+
+
 //esta funcion analiza la carpeta con los problemas
 
 filewalker("public/problemas", function(err, data){
@@ -46,33 +48,34 @@ filewalker("public/problemas", function(err, data){
     
     // ["c://some-existent-path/file.txt","c:/some-existent-path/subfolder"]
     console.log(data.length);
+    reemplazo=`${__dirname}/public/`
+    constante_de_reemplazo=reemplazo.replace(/\\/g, "/")
     
-    
-    proble1=(data[0].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble2=(data[1].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble3=(data[2].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble4=(data[3].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble5=(data[4].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble6 =(data[5].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble7 =(data[6].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble8 =(data[7].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble9 =(data[8].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble10 =(data[9].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble11 =(data[10].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble12 =(data[11].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble13 =(data[12].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble14 =(data[13].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble15 =(data[14].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble16 =(data[15].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble17 =(data[16].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble18 =(data[17].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble19 =(data[18].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble20 =(data[19].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble21 =(data[20].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble22 =(data[21].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble23 =(data[22].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble24 =(data[23].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-    proble25 =(data[24].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", "");
+    proble1=(data[0].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble2=(data[1].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble3=(data[2].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble4=(data[3].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble5=(data[4].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble6 =(data[5].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble7 =(data[6].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble8 =(data[7].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble9 =(data[8].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble10 =(data[9].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble11 =(data[10].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble12 =(data[11].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble13 =(data[12].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble14 =(data[13].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble15 =(data[14].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble16 =(data[15].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble17 =(data[16].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble18 =(data[17].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble19 =(data[18].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble20 =(data[19].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble21 =(data[20].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble22 =(data[21].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble23 =(data[22].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble24 =(data[23].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+    proble25 =(data[24].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, "");
 
          //esta analiza las resoluciones
 filewalker("public/resolucion", function(err, data){
@@ -82,34 +85,37 @@ filewalker("public/resolucion", function(err, data){
         
         // ["c://some-existent-path/file.txt","c:/some-existent-path/subfolder"]
         console.log(data.length);
+       
         
-        
-        rel1=(data[0].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel2=(data[1].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel3=(data[2].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel4=(data[3].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel5=(data[4].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel6 =(data[5].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel7 =(data[6].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel8 =(data[7].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel9 =(data[8].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel10 =(data[9].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel11 =(data[10].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel12 =(data[11].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel13 =(data[12].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel14 =(data[13].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel15 =(data[14].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel16 =(data[15].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel17 =(data[16].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel18 =(data[17].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel19 =(data[18].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel20 =(data[19].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel21 =(data[20].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel22 =(data[21].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel23 =(data[22].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel24 =(data[23].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", ""),
-        rel25 =(data[24].replace(/\\/g, "/")).replace("C:/Users/luis/Desktop/curso javascript+/first-node-express-app-master/public/", "");
-          
+        rel1=(data[0].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel2=(data[1].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel3=(data[2].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel4=(data[3].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel5=(data[4].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel6 =(data[5].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel7 =(data[6].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel8 =(data[7].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel9 =(data[8].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel10 =(data[9].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel11 =(data[10].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel12 =(data[11].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel13 =(data[12].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel14 =(data[13].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel15 =(data[14].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel16 =(data[15].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel17 =(data[16].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel18 =(data[17].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel19 =(data[18].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel20 =(data[19].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel21 =(data[20].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel22 =(data[21].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel23 =(data[22].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel24 =(data[23].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
+        rel25 =(data[24].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, "");
+       
+        console.log(rel3);
+          console.log(`"${constante_de_reemplazo}/public/"`);
+          console.log(__dirname)
          //esta crea o actualiza el archivo javascript         
 fs.writeFile('public/javascript/problemas.js', 
 `let problema1 = {
