@@ -51,6 +51,7 @@ filewalker("public/problemas", function(err, data){
     reemplazo=`${__dirname}/public/`
     constante_de_reemplazo=reemplazo.replace(/\\/g, "/")
     
+    
     proble1=(data[0].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
     proble2=(data[1].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
     proble3=(data[2].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
@@ -84,7 +85,7 @@ filewalker("public/resolucion", function(err, data){
         }
         
         // ["c://some-existent-path/file.txt","c:/some-existent-path/subfolder"]
-        console.log(data.length);
+        console.log(data);
        
         
         rel1=(data[0].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
@@ -113,38 +114,44 @@ filewalker("public/resolucion", function(err, data){
         rel24 =(data[23].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, ""),
         rel25 =(data[24].replace(/\\/g, "/")).replace(`${constante_de_reemplazo}`, "");
        
-        console.log(rel3);
+     res1=proble1.charAt(12),res2=proble2.charAt(12),res3=proble3.charAt(12),res4=proble4.charAt(12),res5=proble5.charAt(12),res6=proble6.charAt(12),res7=proble7.charAt(12),
+     res8=proble8.charAt(12),res9=proble9.charAt(12),res10=proble10.charAt(12),res11=proble11.charAt(12),res12=proble12.charAt(12),res13=proble13.charAt(12),res14=proble14.charAt(12),res15=proble15.charAt(12),res16=proble16.charAt(12)
+     res17=proble17.charAt(12),res18=proble18.charAt(12),res19=proble19.charAt(12),res20=proble20.charAt(12),res21=proble21.charAt(12),res22=proble22.charAt(12),res23=proble23.charAt(12),res24=proble24.charAt(12),res25=proble25.charAt(12);
+            
+        
+        console.log(proble3);
+        console.log(rel8);
           console.log(`"${constante_de_reemplazo}/public/"`);
           console.log(__dirname)
          //esta crea o actualiza el archivo javascript         
 fs.writeFile('public/javascript/problemas.js', 
 `let problema1 = {
     imgProblema:" ${proble1}",
-    respuesta: "b",
+    respuesta: "${res1}",
     imgResolucion: " ${rel1}"
 }
 
 let problema2 = {
     imgProblema: "${proble2}",
-    respuesta: "c",
+    respuesta:"${res2}",
     imgResolucion: " ${rel2}"
 }
 
 let problema3 = {
     imgProblema: "${proble3}",
-    respuesta: "c",
+    respuesta: "${res3}",
     imgResolucion: " ${rel3}"
 }
 
 let problema4 = {
     imgProblema: "${proble4}",
-    respuesta: "b",
+    respuesta: "${res4}",
     imgResolucion: " ${rel4}"
 }
 
 let problema5 = {
     imgProblema: "${proble5}",
-    respuesta: "c",
+    respuesta: "${res5}",
     imgResolucion: " ${rel5}"
 }
 
@@ -152,123 +159,123 @@ let problema5 = {
 
 let problema6 = {
     imgProblema: "${proble6}",
-    respuesta: "d",
+    respuesta: "${res6}",
     imgResolucion: " ${rel6}"
 }
 
 let problema7 = {
     imgProblema:" ${proble7}",
-    respuesta: "c",
+    respuesta: "${res7}",
     imgResolucion: " ${rel7}"
 }
 
 let problema8 = {
     imgProblema: "${proble8}",
-    respuesta: "c",
+    respuesta: "${res8}",
     imgResolucion: " ${rel8}"
 }
 
 let problema9 = {
     imgProblema: "${proble9}",
-    respuesta: "c",
+    respuesta: "${res9}",
     imgResolucion: " ${rel9}"
 }
 
 let problema10 = {
     imgProblema: "${proble10}",
-    respuesta: "b",
+    respuesta: "${res10}",
     imgResolucion: " ${rel10}"
 }
 
 let problema11 = {
     imgProblema: "${proble11}",
-    respuesta: "d",
+    respuesta: "${res11}",
     imgResolucion: " ${rel11}"  
 }
 
 let problema12 = {
     imgProblema: "${proble12}",
-    respuesta: "d",
+    respuesta: "${res12}",
     imgResolucion: " ${rel12}"   
 }
 
 let problema13 = {
     imgProblema: "${proble13}",
-    respuesta: "c",
+    respuesta: "${res13}",
     imgResolucion: " ${rel13}"   
 }
 
 let problema14 = {
     imgProblema: "${proble14}",
-    respuesta: "a",
+    respuesta: "${res14}",
     imgResolucion: " ${rel14}"   
 }
 
 let problema15 = {
     imgProblema: "${proble15}",
-    respuesta: "c",
+    respuesta: "${res15}",
     imgResolucion: " ${rel15}"    
 }
 
 let problema16 = {
     imgProblema: "${proble16}",
-    respuesta: "c",
+    respuesta: "${res16}",
     imgResolucion: " ${rel16}"    
 }
 
 let problema17 = {
     imgProblema: "${proble17}",
-    respuesta: "d",
+    respuesta: "${res17}",
     imgResolucion: " ${rel17}"  
 }
 
 
 let problema18 = {
     imgProblema: "${proble18}",
-    respuesta: "d",
+    respuesta: "${res18}",
     imgResolucion: " ${rel18}"
 }
 
 let problema19 = {
     imgProblema: "${proble19}",
-    respuesta: "c",
+    respuesta: "${res19}",
     imgResolucion: " ${rel19}"
 }
 
 let problema20 = {
     imgProblema: "${proble20}",
-    respuesta: "b",
+    respuesta:"${res20}",
     imgResolucion: " ${rel20}"
 }
 
 let problema21 = {
     imgProblema: "${proble21}",
-    respuesta: "b",
+    respuesta:"${res21}",
     imgResolucion: " ${rel21}"
 }
 
 let problema22 = {
     imgProblema: "${proble22}",
-    respuesta: "a",
+    respuesta:"${res22}",
     imgResolucion: " ${rel22}"
 }
 
 let problema23 = {
     imgProblema: "${proble23}",
-    respuesta: "b",
+    respuesta: "${res23}",
     imgResolucion: " ${rel23}"
 }
 
 let problema24 = {
     imgProblema: "${proble24}",
-    respuesta: "a",
+    respuesta: "${res24}",
     imgResolucion: " ${rel24}"
 }
 
 
 let problema25 = {
     imgProblema: "${proble25}",
-    respuesta: "b",
+    respuesta: "${res25}",
     imgResolucion: " ${rel25}"
 }
 
